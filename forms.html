@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+        .top {
+            margin: 50px auto 0 auto;
+            text-align: center;
+        }
+        .pic{
+        
+            width:80px;
+            height:60px;
+        }
+
+        .top p {
+            width: 900px;
+            margin: auto;
+            font-size: 18px;
+
+        }
+
+        .middle {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .middle .m_left {
+            width: 600px;
+        }
+
+        .middle .m_right {
+            border: 1px solid #ccc;
+            width: 270px;
+            height: 350px;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: row;
+            gap: 200px;
+        }
+
+        .coun {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+        .bot{ 
+            width: 300px;
+            margin: 100px auto 0 auto;
+            font-size:small;
+            text-align: center;
+        }
+        input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;box-sizing: border-box;
+  border: 1px solid rgb(183, 182, 182);
+  
+}
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="captures/bootstrap-logo.svg" class="pic">
+        <h1>Checkout froms</h1>
+        <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a
+            validation state that can be triggered by attempting to submit the form without completing it.
+        </p>
+
+
+    </div>
+    <div class="middle">
+        <div class="m_left">
+            <h2 style="font-size: 22px; margin: 0; font-weight: normal;">Billing address</h2>
+
+            <form action="aa.php" method="post">
+                <div class="name">
+                    <div>
+                        <label for="us_id">Firstname:</label><br>
+                        <input type="text" id="us_id" name="us_id">
+                    </div>
+                    <div>
+                        <label for="us_id2">Lastname:</label><br>
+                        <input type="text" id="us_id2" name="us_id2">
+                    </div>
+
+                </div>
+                <br>
+                <div>
+                    <label for="us_name">Username</label><br>
+                    <input type="text" id="us_name" name="us_name">
+                </div>
+                <br>
+                <div>
+                    <label for="us_em">Email</label><br>
+                    <input type="text" id="us_em" name="us_em">
+                </div>
+                <br>
+                <div>
+                    <label for="us_ad">Adress</label><br>
+                    <input type="text" id="us_ad" name="us_ad">
+                </div>
+                <br>
+                <div>
+                    <label for="us_ad">Adress2</label><br>
+                    <input type="text" id="us_ad2" name="us_ad2">
+                </div>
+                <br>
+
+                <div class="coun">
+                    <div>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="kor">Korea</option>
+                            <option value="usa">USA</option>
+                            <option value="jpn">Japan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="country">City:</label>
+                        <select id="city" name="city">
+                            <option value="seoul">Seoul</option>
+                            <option value="busan">Busan</option>
+                            <option value="ilsan">ilsan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="us_zip">Zip</label>
+                        <input type="text" id="us_zip" name="us_zip">
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="payment" style="margin-top: 30px;">
+                    <label>Payment </label><br><br>
+                    <input type="radio" name="payment" value="credit">
+                    Credit card
+                    </label><br>
+                    <input type="radio" name="payment" value="credit">
+                    PayPal
+                    </label> <br>
+                    <input type="radio" name="payment" value="credit">
+                    Debit card
+                    </label> <br>
+                </div>
+                <br>
+
+                <hr>
+                <div class="check" style="margin-top:30px;">
+                    <input type="checkbox" name="information" value="if1">
+                    <label for="information">Shipping address is the same as my billing address</label>
+                    <br>
+                    <input type="checkbox" name="information" value="if2">
+                    <label for="information">Save this information for next time</label>
+                </div>
+                <br>
+
+                <hr>
+                <div>
+                    <br>
+                    <label for="today">TOday:</label>
+                    <input type="date" id="tohday" name="today">
+                </div>
+                <br>
+
+                <hr>
+                <br>
+                <label for="message">
+                    Suggestions:</label> <br>
+                <textarea id="message" name="message"></textarea>
+                <br>
+                <br>
+
+                <input type="submit" value="Submit Order">
+            </form>
+
+        </div>
+
+        <div class="m_right">
+            <h3 style="font-size: 22px; margin: 0; font-weight: normal; color:  rgb(44, 83, 236)">your cart</h3>
+
+        </div>
+
+    </div>
+ <div class="bot">
+    <p>© 2017–2022 Company Name</p>
+   <p>Privacy Terms Support</p>
+
+ </div>
+
+</body>
+
+</html>
